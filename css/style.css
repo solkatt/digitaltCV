@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 
 body {
@@ -26,7 +26,7 @@ nav {
 
 
 
-nav > a {
+nav>a {
     text-decoration: none;
     color: white;
     margin: 0 20px;
@@ -40,7 +40,7 @@ nav > a {
     padding: 100px;
     backdrop-filter: blur(4px);
 
-   
+
 }
 
 .icon {
@@ -59,7 +59,9 @@ nav > a {
     color: rgba(216, 122, 14, 0.4);
 
 }
-.left, .right {
+
+.left,
+.right {
 
     top: 0;
 }
@@ -75,7 +77,7 @@ nav > a {
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+
 }
 
 #hero-code {
@@ -88,7 +90,7 @@ nav > a {
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+
 }
 
 
@@ -99,28 +101,12 @@ nav > a {
 
 
 main {
-    height: 100vh;
-    
-    background: black;
-    display: flex;
-    justify-content: center;
 
-
-
-  
-}
-
-#av_container{
-    scroll-snap-type: x mandatory;
-
-    background: black;
-
-    display: flex;
-    align-items: center;
 
 
 
 }
+
 
 .portfolio_title {
 
@@ -130,14 +116,33 @@ main {
     position: relative;
     top: -20%;
     color: white;
-    display: flex; 
+    display: flex;
 
-    
+
     justify-content: center;
     align-items: center;
-    flex-direction: row; 
+    flex-direction: row;
 
     text-indent: 20px;
+
+}
+
+
+
+#av_container {
+    scroll-snap-type: x mandatory;
+
+    background: black;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+
+
 
 }
 
@@ -145,37 +150,162 @@ main {
 .portfolio_text {
     color: white;
 }
+
 #epiflora {
 
     padding: 30px;
 
     height: 100vh;
-    scroll-snap-align: center;
 
-    
-    
+
+
 }
 
 #epiflora img {
+    max-width: 50vw;
+
+
+}
+
+
+
+
+#epiflora img {
     max-width: 80vw;
+}
+
+
+
+/* GRID CONTAINER */ 
+
+.grid-wrapper {
+display: grid;
+width: 900px;
+max-width: 95%;
+height: 90vh;
+
+margin: 30px auto;
+padding: 5px;
+
+grid-gap: 5px;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(6, 1fr) ;
+
+
+background: white;
+} 
+
+.box {
+    background: ivory;
+
+    background: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5) ;
+}
+
+.box:hover {
+
 
 
 }
 
-#slider-container {
 
-    position: relative;
-    color: white;
+
+
+
+.box.grid-item-1 {
+    grid-column: span 3;
+    grid-row: span 3;
+
+    background-image: url('/img/epiflora_1.jpeg');
+
+}
+
+.box.grid-item-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+
+    background-image: url('/img/epiflora_2.jpeg');
+
 }
 
 
-.slide {
-    position: absolute;
-    opacity: 0;
-    height: 100vh;
+.box.grid-item-3 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 3;
+
+    background-image: url('/img/Boreal.png');
+
+
 }
 
 
+.box.grid-item-4 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
+
+    background-image: url('/img/boreal_1.jpg');
+
+
+}
+
+
+
+.box.grid-item-5 {
+    grid-column: 4 / span 2;
+    grid-row: 3 / span 2;
+
+    background-image: url('/img/hero_1.png');
+
+
+
+}
+
+.box.grid-item-6 {
+    grid-column: span 3;
+    grid-row:  span 2;
+
+    background-image: url('/img/hero_2.png');
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOOTER */
 
 footer {
     display: flex;
