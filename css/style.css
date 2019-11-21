@@ -1,3 +1,13 @@
+
+* {
+
+box-sizing: border-box;
+
+
+}
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,57 +20,17 @@ body {
     background: black;
 }
 
-p {}
-
-nav {
-    background: rgba(0, 0, 0, 0.9);
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3em;
-    width: 100vw;
-    top: 0;
-
-    z-index: 9;
-}
-
-
-
-nav>a {
-    text-decoration: none;
-    color: white;
-    margin: 0 20px;
-    padding: 30px;
-    border: 1px solid rgba(223, 223, 223, 0);
-
-
-    border-radius: 50px;
-
-
-    transition: color, background-color, border 1s ease-in-out;
-}
-
-
-nav>a:hover{
-    border: 1px solid rgba(223, 223, 223);
-
-
+p {
 
 }
-nav>a:active{
-    color: rgb(39, 53, 92);
-
-}
-
 
 
 .top {
 
     height: 100vh;
 
-
 }
+
 
 
 #title {
