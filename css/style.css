@@ -265,7 +265,7 @@ grid-template-rows: repeat(6, 1fr) ;
     grid-column: span 3;
     grid-row: span 3;
 
-    background-image: url('/img/epiflora_1.jpeg');
+    background-image: url('/img/epiflora_3.jpg');
 
 }
 
@@ -303,7 +303,7 @@ grid-template-rows: repeat(6, 1fr) ;
     grid-column: 4 / span 2;
     grid-row: 3 / span 2;
 
-    background-image: url('/img/hero_1.png');
+    background-image: url('/img/boreal_3.jpg');
 
 
 
@@ -313,39 +313,11 @@ grid-template-rows: repeat(6, 1fr) ;
     grid-column: span 3;
     grid-row:  span 2;
 
-    background-image: url('/img/hero_2.png');
+    background-image: url('/img/epiflora_4.jpg');
 
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -358,32 +330,34 @@ footer {
 
 }
 
-footer i {
+footer a {
     margin: 20px;
+    text-decoration: none;
 }
 
 
+/* -------- MEDIA QUERY --------- */
 
 
 
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px)
 {
     
     .top {
-        height: 60vh;
+        height: 70vh;
     }
     
+    #title {
+       
+        padding: 10px;
     
     
+    }
     
-    
-    
-    
+
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
 
