@@ -1,0 +1,188 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: black;
+}
+
+p {}
+
+nav {
+    background: rgba(39, 18, 8, 0.7);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    width: 100vw;
+
+    z-index: 9;
+}
+
+
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+}
+
+
+#title {
+    position: absolute;
+    border: 2px white solid;
+    color: white;
+    padding: 100px;
+    backdrop-filter: blur(4px);
+
+   
+}
+
+.icon {
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+    font-size: 2em;
+
+    position: relative;
+    bottom: -30%;
+
+
+
+}
+
+.icon:hover {
+    color: rgba(216, 122, 14, 0.4);
+
+}
+.left, .right {
+
+    top: 0;
+}
+
+
+#hero {
+    height: 100vh;
+    background-image: url('/img/hero_2.png');
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+#hero-code {
+    height: 100vh;
+    background-image: url('img/hero_2.png');
+    background-size: cover;
+    background-repeat: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+
+
+
+
+
+
+
+main {
+    height: 100vh;
+    
+    background: black;
+    display: flex;
+    justify-content: center;
+
+
+
+  
+}
+
+#av_container{
+    scroll-snap-type: x mandatory;
+
+    background: black;
+
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.portfolio_title {
+
+
+
+
+    position: relative;
+    top: -20%;
+    color: white;
+    display: flex; 
+
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+
+    text-indent: 20px;
+
+}
+
+
+.portfolio_text {
+    color: white;
+}
+#epiflora {
+
+    padding: 30px;
+
+    height: 100vh;
+    scroll-snap-align: center;
+
+    
+    
+}
+
+#epiflora img {
+    max-width: 80vw;
+
+
+}
+
+#slider-container {
+
+    position: relative;
+    color: white;
+}
+
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    height: 100vh;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+footer i {
+    margin: 20px;
+}
