@@ -27,4 +27,4 @@ Bland annat;
 ## Links
 
 * [Repository](https://github.com/solkatt/digitaltCV.git) 
-* [Demo](https://github.com/solkatt/digitaltCV.git) 
+* [Demo](https://solkatt.github.io/digitaltCV/) 
