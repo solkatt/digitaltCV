@@ -1,9 +1,9 @@
-
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-box-sizing: border-box;
-
-
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -21,16 +21,9 @@ body {
 }
 
 
-main {
+main {}
 
-
-
-
-}
-
-p {
-
-}
+p {}
 
 
 .top {
@@ -54,17 +47,26 @@ p {
 .icon {
     color: rgba(255, 255, 255, 0.3);
     z-index: 2;
-    font-size: 2em;
-
+    font-size: 1rem;
     position: relative;
     bottom: -70%;
+    transition: .5s all ease-in-out;
+
 
 
 
 }
 
+.icon::before {
+
+    font-size: 1.5rem;
+
+}
+
 .icon:hover {
-    color: rgba(216, 122, 14, 0.4);
+
+    color: rgb(255, 255, 255);
+    transition: .5s all ease-in-out;
 
 }
 
@@ -114,7 +116,8 @@ p {
 #av_container {
 
     background: black;
-
+    position: relative;
+    top: -30vh;
     display: flex;
     flex-direction: column;
 
@@ -122,6 +125,7 @@ p {
     justify-content: center;
 
     width: 100%;
+
     margin-bottom: 30px;
 
 
@@ -131,15 +135,14 @@ p {
 
 #epiflora {
 
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center;
+    align-items: center; */
 
     /* height: 100vh; */
 
-
+    width: 100%;
 
 }
 
@@ -147,10 +150,11 @@ p {
 
 
 
-#epiflora img {
-    max-width: 60vw;
-
- 
+.epiflora-header {
+    max-width: 75vw;
+    justify-content: start;
+    position: relative;
+    left: 0;
 }
 
 .intro {
@@ -164,9 +168,10 @@ p {
 .intro-appear {
 
     opacity: 1;
+
     transform: translateY(0px);
 
-        
+
 }
 
 
@@ -176,26 +181,31 @@ p {
 
 
     position: relative;
-    top: -20%;
+    top: -50vh;
+    /* left: 10vw; */
+    padding-right: 2rem;
     color: white;
     display: flex;
 
-
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
 
     text-indent: 20px;
-
 }
 
+.portfolio_title>h1 {
+    font-size: 4rem;
+}
 
 
 
 .portfolio_text {
     color: white;
-    padding: 20px;
-
+    position: relative;
+    top: -20vh;
+    padding-left: 2rem;
+    align-items: center;
     max-width: 900px;
 }
 
@@ -205,10 +215,10 @@ p {
 
 
     color: ivory;
-    
+
     display: flex;
     flex-direction: column;
-    
+
     justify-content: center;
     align-items: center;
 
@@ -224,73 +234,75 @@ p {
 
 
 
-/* GRID CONTAINER */ 
+/* GRID CONTAINER */
 
 .grid-wrapper {
-display: grid;
-width: 900px;
-max-width: 95%;
-height: 90vh;
+    display: grid;
+    /* width: 900px; */
+    max-width: 95%;
+    height: 120vh;
 
-margin: 30px auto;
-padding: 5px;
+    margin: 30px auto;
+    padding: 5px;
 
-grid-gap: 5px;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(6, 1fr) ;
+    grid-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "one two"
+        "three four"
+        "five six"
+
+    ;
 
 
-/* background: white; */
-} 
+
+    /* background: white; */
+}
 
 .box {
-    background: ivory;
-
     background: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.5);
 }
 
-.box:hover {
-
-}
+.box:hover {}
 
 
 .box.grid-item-1 {
-    grid-column: span 3;
-    grid-row: span 3;
+    grid-area: one;
 
-    background-image: url('/img/epiflora_3.jpg');
+    background-image: url('../img/epiflora/IOL_1.jpg');
 
 }
 
 .box.grid-item-2 {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-area: two;
 
-    background-image: url('/img/epiflora_2.jpeg');
+
+    background-image: url('../img/epiflora/IOL_2.jpg');
 
 }
 
 
 .box.grid-item-3 {
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 3;
+    grid-area: three;
 
-    background-image: url('/img/Boreal.png');
+
+    background-image: url('../img/epiflora/IOL_3.jpg');
 
 
 }
 
 
 .box.grid-item-4 {
-    grid-column: 3 / span 1;
-    grid-row: 4 / span 1;
+    grid-area: four;
 
-    background-image: url('/img/boreal_1.jpg');
+
+    background-image: url('../img/epiflora/IOL_4.jpg');
 
 
 }
@@ -298,20 +310,19 @@ grid-template-rows: repeat(6, 1fr) ;
 
 
 .box.grid-item-5 {
-    grid-column: 4 / span 2;
-    grid-row: 3 / span 2;
+    grid-area: five;
 
-    background-image: url('/img/boreal_3.jpg');
+
+    background-image: url('../img/epiflora/IOL_7.jpg');
 
 
 
 }
 
 .box.grid-item-6 {
-    grid-column: span 3;
-    grid-row:  span 2;
+    grid-area: six;
 
-    background-image: url('/img/epiflora_4.jpg');
+    background-image: url('../img/epiflora/IOL_6.jpg');
 
 
 
@@ -339,31 +350,75 @@ footer a {
 
 
 
-@media only screen and (max-width: 600px)
-{
-    
+@media only screen and (max-width: 600px) {
+
     .top {
         height: 70vh;
     }
-    
+
     #title {
-       
+
         padding: 10px;
-    
-    
+
+
     }
-    
+
+    #av_container {
+
+        background: black;
+        position: relative;
+        top: -30vh;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+
+        margin-bottom: 30px;
+
+
+
+
+
+
+    }
+
+    .grid-wrapper {
+
+        max-width: 95%;
+        height: 300vh;
+
+        margin: 30px auto;
+        padding: 5px;
+
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+
+        ;
+
+
+
+        /* background: white; */
+    }
+
+
+
+
+
+
+
+
 
 }
 
-@media only screen and (min-width: 600px) {
-
-
-
-
-
-
-
-}
-
-
+@media only screen and (min-width: 600px) {}
