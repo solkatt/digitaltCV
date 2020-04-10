@@ -75,7 +75,7 @@ p {}
     z-index: 2;
     font-size: 1rem;
     position: relative;
-    bottom: -70%;
+    bottom: -20%;
     transition: .5s all ease-in-out;
 
         justify-self: center;
@@ -628,7 +628,7 @@ footer a {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px){
+@media only screen and (min-width: 768px) and (max-width: 1200px){
  
 
     .portfolio_title {
