@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
 
+
+
     <script src="script.js"></script>
 
 </head>
@@ -18,8 +20,18 @@
 <body>
 
 
+    <div id="landing">
+        <h1>viktor ödman</h1>
+        <h3 style="color: white;">audiovisual artist & web designer</h3>
 
-    <div class="menu-wrap">
+    </div>
+    <i class="fa fa-chevron-circle-down icon" aria-hidden="true"></i>
+
+
+
+
+
+    <div class="menu-wrap  hide-desktop show-mobile">
         <input type="checkbox" class="toggler">
         <div class="hamburger">
             <div></div>
@@ -28,11 +40,10 @@
             <div>
                 <div>
                     <ul>
-                        <li><a href="#">Audiovisual</a></li>
-                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#about">about</a></li>
 
-                        <li><a href="#">Cv</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contact">contact</a></li>
 
 
                     </ul>
@@ -40,8 +51,26 @@
 
 
 
+
+
+
             </div>
         </div>
+
+    </div>
+
+    <div class="desktopMenu hide-mobile show-desktop">
+
+
+        <ul>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#about">about</a></li>
+
+            <li><a href="#contact">contact</a></li>
+
+
+        </ul>
+
 
     </div>
 
@@ -65,69 +94,94 @@
                 <h4>INSTALLATION ART</h2>
 
             </div>
-            <i class="fa fa-chevron-circle-down icon" aria-hidden="true"></i>
 
 
         </div>
+    </div>
+
+    <main>
+        <div id="about">
+            <p>
+                Viktor Ödman is an audiovisual artist and web designer based in Halmstad, Sweden.
+                <br>
+                <br>
+                <br>
+                Working with both analogue and digital tools to create audiovisual experiences 
+                in nature as well in the world of the wide web. 
+             <br>
+             <br>
+             <br>
+            </p>
+
         </div>
 
 
-        <main>
 
 
-            <div id="av_container">
-
-                <div id="epiflora">
-                    <img class="intro epiflora-header" src="img/epiflora_1.jpeg">
-                    <div class="portfolio_title">
-                        <h1>| EPIFLORA  </h1>
-                        <h3>Island of Light 2018</h3>
-
-                    </div>
-
-                    <div class="portfolio_text">
-                        <h2>Sandön Cove, Smögen</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, quidem repudiandae, nemo
-                            culpa
-                            at
-                            iste provident non magnam nostrum, deleniti error repellendus dolor asperiores cupiditate
-                            ullam
-                            eius
-                            sunt molestiae tempore et! Tenetur.</p>
-                    </div>
+        <div id="portfolio">
 
 
-                    <div class="grid-wrapper">
-                        <div class="box grid-item-1"></div>
-                        <div class="box grid-item-2"></div>
-                        <div class="box grid-item-3"></div>
-                        <div class="box grid-item-4"></div>
-                        <div class="box grid-item-5"></div>
-                        <div class="box grid-item-6"></div>
-            
-                    </div>
-        
-    
-
-
-
-
-                </div>
-
-
-
-
-            </div>
          
 
 
-        </main>
 
-  
+
+
+            <div id="epiflora">
+                <img class="intro epiflora-header" src="img/epiflora_1.jpeg">
+                <div class="portfolio_title">
+                    <h1>| EPIFLORA </h1>
+                    <h3>Island of Light 2018</h3>
+
+                </div>
+
+                <div class="portfolio_text">
+                    <h2>Vallevik, Smögen</h2>
+                    <p>Monumental projection mapping installation on the cliffs in the ocean. <br>
+                    150m wide rock texture covered in light and the surrounding nature covered in soundscape.</p>
+                </div>
+
+
+                <div class="grid-wrapper">
+                    <div class="box grid-item-1"></div>
+                    <div class="box grid-item-2"></div>
+                    <div class="box grid-item-3"></div>
+                    <div class="box grid-item-4"></div>
+                    <div class="box grid-item-5"></div>
+                    <div class="box grid-item-6"></div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div id="contact">
+
+            <h1 class="contactTitle">contact</h1>
+            <a href="mailto:hello@viktorodman.se"><h2 class="contactDetails">hello@viktorodman.se</h2></a>
+           
+
+
+
+
+         
+
+
+        </div>
+
+
+    </main>
+
+
 
 
 </body>
-<footer id="contact">
+<footer id="footer">
 
 
 
@@ -137,7 +191,7 @@
 
 
 
-  <a href="https://vimeo.com/user19132815" target="_blank" class="fa fa-vimeo icon" aria-hidden="true"></a>
+    <a href="https://vimeo.com/user19132815" target="_blank" class="fa fa-vimeo icon" aria-hidden="true"></a>
     <a href="https://www.instagram.com/havoc.init/" target="_blank" class="fa fa-instagram icon" aria-hidden="true"></a>
     <a class="fa fa-github-square icon" aria-hidden="true"></a>
     <a class="fa fa-linkedin-square icon" aria-hidden="true"></a>

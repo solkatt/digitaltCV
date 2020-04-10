@@ -1,15 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 
 
 html {
     scroll-behavior: smooth;
+
 }
 
 
@@ -18,10 +23,14 @@ body {
     padding: 0;
 
     background: black;
+    font-family: 'Josefin Slab', serif;
+
 }
 
 
-main {}
+main {
+
+}
 
 p {}
 
@@ -33,6 +42,21 @@ p {}
 }
 
 
+#landing {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#landing>h1 {
+    font-size: 7rem;
+    color: white;
+    justify-self: center;
+    margin: 1rem;
+}
 
 #title {
     position: absolute;
@@ -40,6 +64,8 @@ p {}
     color: white;
     padding: 100px;
     backdrop-filter: blur(4px);
+    
+
 
 
 }
@@ -51,6 +77,8 @@ p {}
     position: relative;
     bottom: -70%;
     transition: .5s all ease-in-out;
+
+        justify-self: center;
 
 
 
@@ -73,7 +101,7 @@ p {}
 
 
 #hero {
-    height: 50vh;
+    height: 60vh;
     margin: 80px 0 20px 0;
     background-image: url('/img/hero_2.png');
     background-size: cover;
@@ -87,17 +115,54 @@ p {}
 
 }
 
-#hero-code {
-    height: 100vh;
-    background-image: url('img/hero_2.png');
-    background-size: cover;
-    background-repeat: none;
+/*  DESKTOP MENU */ 
 
+.desktopMenu {
+background-color: rgba(0, 0, 0, 0.541);
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+.desktopMenu>ul {
+   
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+.desktopMenu>ul>li>a {
+  
+    color: white; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    background: rgba(26, 26, 26, 0.452); 
+    padding: 20px 5px; 
+    display: inline-block; 
+    width: 100%; 
+    text-align: center; 
+  
+    
+
+}
+
+/* ///////////////////////// */ 
+
+#about {
+
+    font-size: 2vw;
+    height: 100vh;
+    color: white;
+    max-width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-
+    margin: 0 10vw 10vh 10vw ;
+    padding: 2rem;
 }
 
 
@@ -109,11 +174,7 @@ p {}
 
 
 
-
-
-
-
-#av_container {
+#portfolio{
 
     background: black;
     position: relative;
@@ -135,12 +196,6 @@ p {}
 
 #epiflora {
 
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center;
-    align-items: center; */
-
-    /* height: 100vh; */
 
     width: 100%;
 
@@ -181,6 +236,7 @@ p {}
 
 
     position: relative;
+   
     top: -50vh;
     /* left: 10vw; */
     padding-right: 2rem;
@@ -195,18 +251,32 @@ p {}
 }
 
 .portfolio_title>h1 {
-    font-size: 4rem;
+    font-size: 7vw;
+}
+.portfolio_title>h3 {
+    font-size: 3vw;
 }
 
 
 
+
 .portfolio_text {
-    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
-    top: -20vh;
-    padding-left: 2rem;
-    align-items: center;
-    max-width: 900px;
+    top: -30vh;
+ 
+
+
+    /* align-items: center; */
+    max-width: 900px; 
+
+    font-size: 3rem;
+    color: white;
+    max-width: 70vw;
+  
+    margin: 0 10vw 0 10vw ;
 }
 
 
@@ -241,7 +311,6 @@ p {}
     /* width: 900px; */
     max-width: 95%;
     height: 120vh;
-
     margin: 30px auto;
     padding: 5px;
 
@@ -329,6 +398,48 @@ p {}
 }
 
 
+/* /////////// Contact //////// */
+
+#contact {
+
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactTitle{
+
+    color: white;
+    align-self: center;
+    font-size: 10vw;
+    justify-content: center;
+}
+
+
+.contactDetails{
+
+    color: rgb(238, 238, 238);
+    align-self: center;
+    justify-content: center;
+
+    font-size: 5vw;
+}
+
+.contactDetails:hover{
+
+    color: white;
+
+}
+
+
+#contact>a {
+    text-decoration: none;
+    align-self: center;
+    justify-content: center;
+
+}
 
 
 /* FOOOTER */
@@ -343,6 +454,22 @@ footer a {
     margin: 20px;
     text-decoration: none;
 }
+
+
+
+
+/* HIDE / SHOW */ 
+
+.hide-desktop {
+    display: none;
+}
+
+.show-desktop {
+    display: block;
+}
+
+
+
 
 
 /* -------- MEDIA QUERY --------- */
@@ -363,7 +490,22 @@ footer a {
 
     }
 
-    #av_container {
+
+    #landing {
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #landing>h1 {
+        font-size: 4rem;
+    }
+    
+
+    #portfolio {
 
         background: black;
         position: relative;
@@ -414,11 +556,122 @@ footer a {
 
 
 
+    .contactTitle{
+
+     
+        font-size: 20vw;
+    
+    }
+    
+    
+    .contactDetails{
+    
+      
+    
+        font-size: 10vw;
+    }
+
+
+    #about {
+
+        font-size: 5vw;
+     
+    }
+    
+
+    .portfolio_text {
+     
+        top: 2vh;
+     
+    
+    
+        /* align-items: center; */
+        max-width: 900px; 
+    
+        font-size: .7rem;
+        color: white;
+        max-width: 70vw;
+      
+        margin: 0 10vw 0 10vw ;
+    }
+    
+    .portfolio_title {
+
+
+
+
+        position: relative;
+       
+        top: -20vh;
+        /* left: 10vw; */
+    
+    }
+    
+    
+   
+
+
+    .show-mobile {
+        display: block;
+    }
+
+    
+    .hide-mobile {
+        display: none;
+    }
+    
+
 
 
 
 
 
 }
+
+@media only screen and (min-width: 768px) and (max-width: 959px){
+ 
+
+    .portfolio_title {
+
+
+
+
+        position: relative;
+       
+        top: -30vh;
+        /* left: 10vw; */
+    
+    }
+    
+
+    #about {
+
+        font-size: 5vw;
+     
+    }
+
+
+
+
+
+
+    .portfolio_text {
+     
+        top: 2vh;
+     
+    
+    
+        /* align-items: center; */
+        max-width: 900px; 
+    
+        font-size: 2rem;
+        color: white;
+        max-width: 70vw;
+      
+        margin: 0 10vw 0 10vw ;
+    }
+     
+    }
+
 
 @media only screen and (min-width: 600px) {}

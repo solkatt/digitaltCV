@@ -4,7 +4,7 @@ Digitalt CV
 Javascript 1
 --------------
 
-I den här inlämningsuppgiften skapade jag ett digitalt portfolio med fokus på audiovisuell konst och webdesign. 
+I den här inlämningsuppgiften skapade jag ett digitalt portfolio med fokus på audiovisuell konst. 
 
 Målet är att skapa en interaktiv sida, och för att uppnå detta valde jag utforska "animation on scroll". Så i Javascript skrev jag en funktion som lyssnar på användarens position på sidan och startar en animation vid en viss punkt. 
 
@@ -21,7 +21,7 @@ Bland annat;
 
      Separat sida för Web Design, Kontakt och CV. 
 
-     Utökat innehåll på samtliga sidor.´
+     Utökat innehåll på samtliga delar.´
 
 
 ## Links
